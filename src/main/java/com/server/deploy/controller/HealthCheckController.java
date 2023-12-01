@@ -21,6 +21,7 @@ public class HealthCheckController {
     public ResponseEntity<?> healthCheck() {
         visitedCount++;
         Map<String, Object> healthCheckData = new HashMap<>();
+        healthCheckData.put("git_username", "0dnjs");
         healthCheckData.put("actor", "임예림");
         healthCheckData.put("serverName", serverName);
         healthCheckData.put("env", env);
